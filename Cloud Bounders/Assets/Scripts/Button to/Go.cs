@@ -14,6 +14,6 @@ public class Go : MonoBehaviour {
 	
 	}
 	public void OnButtonClick(){
-		SceneManager.LoadScene ("Title");
+		SceneManager.LoadScene ("Game");
 	}
 }

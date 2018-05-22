@@ -1,65 +1,65 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 public class Coinage : MonoBehaviour {
 
 	// Use this for initialization
 	
-    public int coin = 0;
+    //public int coin = 0;
 
     void Start () {
         //DontDestroyOnLoad(this.gameObject);
-        PlayerPrefs.SetInt("Coin", coin);
+      //  PlayerPrefs.SetInt("Coin", coin);
     }
     
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown ("p"))
-        {
+      //  if (Input.GetKeyDown ("p"))
+      //  {
             //reload the scene
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene("Tutorial");
+       //     Scene scene = SceneManager.GetActiveScene();
+       //     SceneManager.LoadScene("Title");
 
-        }
-        if (Input.GetKeyDown("o"))
-        {
+      //  }
+      //  if (Input.GetKeyDown("o"))
+      //  {
             //reload the scene
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene("Title");
+       //     Scene scene = SceneManager.GetActiveScene();
+       //     SceneManager.LoadScene("Title");
 
-        }
+       // }
 
-    }
+    //}
 
 
-    void OnTriggerEnter(Collider other)
-    {
+   // void OnTriggerEnter(Collider other)
+   // {
        
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
-            Soundmanagerscript.PlaySound("Coin");
+       // if (other.gameObject.CompareTag("Coin"))
+       // {
+         //   PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
+         //   Soundmanagerscript.PlaySound("Coin");
             
 
-            Debug.Log("Coin");
-        }
+         //   Debug.Log("Coin");
+        //}
 
        
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
+   // void OnCollisionEnter(Collision collision)
+   // {
 
 
-        if (collision.gameObject.tag == "Enemy")
-        {
-            PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") - 1);
-            Soundmanagerscript.PlaySound("Death");
-            Soundmanagerscript.PlaySound("Drop");
-        }
+      //  if (collision.gameObject.tag == "Enemy")
+       // {
+       //     PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") - 1);
+       //     Soundmanagerscript.PlaySound("Death");
+       //     Soundmanagerscript.PlaySound("Drop");
+       // }
 
-    }
+    //}
 
 }
