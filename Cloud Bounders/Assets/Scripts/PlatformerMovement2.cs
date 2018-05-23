@@ -36,6 +36,7 @@ public class PlatformerMovement2 : MonoBehaviour {
         }
     }
 
+
     void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.layer == 8) {
 			grounded = true;

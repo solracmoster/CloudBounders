@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Killer
+  - cloud
+  - BOOM
+  - Enemy
   layers:
   - Default
   - TransparentFX
