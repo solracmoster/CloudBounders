@@ -48,6 +48,7 @@ public class Clouds : MonoBehaviour {
         if (other.gameObject.tag == "cloud")
         {
         PlayerPrefs.SetInt("cloud", PlayerPrefs.GetInt("cloud") + 1);
+            Debug.Log(cloud);
         //Soundmanagerscript.PlaySound("HTank");
 
     }
