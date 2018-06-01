@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 00000000000000000000000000000000
+  productGUID: 865f710ddb48bbf428c800c605a79d1d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -724,7 +724,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
   cloudProjectId: 955ec371-d226-4770-b1d2-5d0fcf69ec4f
-  projectName: Platformer-2D
+  projectName: Cloud Bounders
   organizationId: solracmoster
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

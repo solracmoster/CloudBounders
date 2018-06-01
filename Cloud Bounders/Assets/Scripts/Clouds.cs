@@ -32,8 +32,9 @@ public class Clouds : MonoBehaviour {
     
 		//void OnCollisionEnter2D (Collision2D collision)
 	//{
-		///if (collision.gameObject.tag == "Killer") {
-		//	PlayerPrefs.SetInt ("Health", PlayerPrefs.GetInt ("Health") - 1);
+		//if (collision.gameObject.tag == "Ground") {
+		//	PlayerPrefs.SetInt ("cloud", PlayerPrefs.GetInt ("cloud") + 1);
+        //    Debug.Log(cloud);
             //Soundmanagerscript.PlaySound("Hurt");
        // }
 
@@ -52,5 +53,6 @@ public class Clouds : MonoBehaviour {
         //Soundmanagerscript.PlaySound("HTank");
 
     }
+
     }
 }
