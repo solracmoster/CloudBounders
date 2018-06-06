@@ -9,6 +9,9 @@ TagManager:
   - cloud
   - Ground
   - Cloud
+  - Killer
+  - BOOm
+  - bullet
   layers:
   - Default
   - TransparentFX

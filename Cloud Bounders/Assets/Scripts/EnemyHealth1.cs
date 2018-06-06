@@ -30,4 +30,13 @@ public class EnemyHealth1 : MonoBehaviour {
             //Soundmanagerscript.PlaySound("EHurt");
         }
 	}
+     void OnTriggerEnter2D(Collider2D other)
+    {
+       if (other.gameObject.tag == "BOOm")
+       {
+            health--;
+            //Soundmanagerscript.PlaySound("HTank");
+
+        }
+   }
 }

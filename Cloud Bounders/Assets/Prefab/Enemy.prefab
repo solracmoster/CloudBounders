@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4761572755731728}
   - component: {fileID: 212367029085825086}
-  - component: {fileID: 114666041324506446}
   - component: {fileID: 50386098801716576}
   - component: {fileID: 58843098509318248}
-  - component: {fileID: 114683672813523354}
+  - component: {fileID: 114993005729970258}
+  - component: {fileID: 114845420322583954}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -58,7 +58,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -79,21 +79,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.16000001
---- !u!114 &114666041324506446
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1165516060881282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbbe92cdc3ae7c40833455c7bbae2c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  chaseSpeed: 4
-  chaseTriggerDistance: 50
---- !u!114 &114683672813523354
+--- !u!114 &114845420322583954
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,6 +91,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+--- !u!114 &114993005729970258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165516060881282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be3709554649694b9169d7c9013ebcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!212 &212367029085825086
 SpriteRenderer:
   m_ObjectHideFlags: 1

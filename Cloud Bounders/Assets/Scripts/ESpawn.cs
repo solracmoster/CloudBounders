@@ -4,45 +4,25 @@ using UnityEngine;
 
 public class ESpawn : MonoBehaviour {
 
-    public float spawnTime;        // The amount of time between each spawn.
-    public float spawnDelay;       // The amount of time before spawning starts.
     public GameObject enemy;
-
-    public int maxDistance;
-    public Transform target;
-    public Transform myTransform;
-
-    void Awake()
-    {
-        myTransform = transform;
-
-    }
+    float randX;
+    Vector2 whereToSpawn;
+    public float spawnRate = 2f;
+    public float nextSpawn = 0.0f;
 
     void Start()
     {
-        GameObject stop = GameObject.FindGameObjectWithTag("Player");
-
-        target = stop.transform;
-
-        maxDistance = 5;
-
-        StartCoroutine(SpawnTimeDelay());
+        
     }
 
-    IEnumerator SpawnTimeDelay()
+   void Update()
     {
-        while (true)
+        if (Time.time > nextSpawn)
         {
-            if (Vector3.Distance(target.position, myTransform.position) < maxDistance)
-            {
-                Instantiate(enemy, transform.position, Quaternion.identity);
-                yield return new WaitForSeconds(spawnTime);
-            }
-
-            if (Vector3.Distance(target.position, myTransform.position) > maxDistance)
-            {
-                yield return null;
-            }
+            nextSpawn = Time.time + spawnRate;
+            randX = Random.Range(-8.4f, 8.4f);
+            whereToSpawn = new Vector2(randX, transform.position.y);
+            Instantiate(enemy, whereToSpawn, Quaternion.identity);
         }
     }
 }
